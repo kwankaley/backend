@@ -3,8 +3,8 @@ import sys
 import json
 
 ALLOWED_LICENSES = [
-    "MIT",
-    "BSD",
+    "MIT License",
+    "BSD License",
     "Apache 2.0",
     "ISC",
     "LGPL",
