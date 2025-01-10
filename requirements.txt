@@ -4,3 +4,4 @@ sqlparse==0.5.3
 mysqlclient
 djangorestframework
 django-cors-headers
+pip-licenses

@@ -1,0 +1,32 @@
+[
+  {
+    "License": "BSD License",
+    "Name": "Django",
+    "Version": "5.1.4"
+  },
+  {
+    "License": "BSD License",
+    "Name": "asgiref",
+    "Version": "3.8.1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "django-cors-headers",
+    "Version": "4.6.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "djangorestframework",
+    "Version": "3.15.2"
+  },
+  {
+    "License": "GNU General Public License v2 or later (GPLv2+)",
+    "Name": "mysqlclient",
+    "Version": "2.2.7"
+  },
+  {
+    "License": "BSD License",
+    "Name": "sqlparse",
+    "Version": "0.5.3"
+  }
+]
