@@ -2,15 +2,6 @@ import subprocess
 import sys
 import json
 
-ALLOWED_LICENSES = [
-    "MIT License",
-    "BSD License",
-    "Apache 2.0",
-    "ISC",
-    "LGPL",
-    "Public Domain"
-]
-
 def load_allowed_licenses(config_path):
     with open(config_path, "r") as config_file:
         config = json.load(config_file)
