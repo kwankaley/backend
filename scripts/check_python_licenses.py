@@ -2,14 +2,10 @@ import subprocess
 import sys
 import json
 
-ALLOWED_LICENSES = [
-    "MIT License",
-    "BSD License",
-    "Apache 2.0",
-    "ISC",
-    "LGPL",
-    "Public Domain"
-]
+def load_allowed_licenses(config_path):
+    with open(config_path, "r") as config_file:
+        config = json.load(config_file)
+    return config.get("allowedLicenses", [])
 
 def check_python_licenses():
     print("Installing Python dependencies...")
@@ -24,10 +20,11 @@ def check_python_licenses():
     )
 
     licenses = json.loads(result.stdout)
+    allowed_licenses = load_allowed_licenses("./licenses_config.json")
 
     disallowed_packages = [
         package for package in licenses
-        if package["License"] not in ALLOWED_LICENSES
+        if package["License"] not in allowed_licenses
     ]
 
     if disallowed_packages:
